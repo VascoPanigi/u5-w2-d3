@@ -29,4 +29,13 @@ public class BlogPost {
         this.title = title;
         this.content = content;
     }
+
+    public BlogPost(String category, String title, String cover, String content, int readTime, Author author) {
+        this.category = category;
+        this.title = title;
+        this.cover = cover;
+        this.content = content;
+        this.readTime = readTime;
+        this.author = author;
+    }
 }

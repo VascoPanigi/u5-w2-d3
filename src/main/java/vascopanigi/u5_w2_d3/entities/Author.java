@@ -23,8 +23,8 @@ public class Author {
     private LocalDate birthDate;
     private String avatar;
 
-    @OneToMany(mappedBy = "author")
-    private List<BlogPost> blogPostList;
+//    @OneToMany(mappedBy = "author")
+//    private List<BlogPost> blogPostList;
 
     public Author(String name, String surname, String email) {
         this.name = name;
