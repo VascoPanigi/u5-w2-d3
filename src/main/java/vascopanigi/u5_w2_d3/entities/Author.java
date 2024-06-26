@@ -10,7 +10,6 @@ import java.util.UUID;
 @Getter
 @Setter
 @ToString
-@AllArgsConstructor
 @NoArgsConstructor
 @Entity
 @Table(name = "authors")
@@ -27,4 +26,9 @@ public class Author {
     @OneToMany(mappedBy = "author")
     private List<BlogPost> blogPostList;
 
+    public Author(String name, String surname, String email) {
+        this.name = name;
+        this.surname = surname;
+        this.email = email;
+    }
 }
