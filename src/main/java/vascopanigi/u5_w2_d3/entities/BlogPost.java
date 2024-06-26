@@ -8,7 +8,6 @@ import java.util.UUID;
 @Getter
 @Setter
 @ToString
-@AllArgsConstructor
 @NoArgsConstructor
 @Entity
 @Table(name = "BlogPosts")
@@ -25,4 +24,9 @@ public class BlogPost {
     @ManyToOne
     @JoinColumn(name="author_id")
     private Author author;
+
+    public BlogPost(String title, String content) {
+        this.title = title;
+        this.content = content;
+    }
 }
